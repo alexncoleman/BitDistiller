@@ -50,7 +50,7 @@ extra_compile_args = {
         "--expt-extended-lambda",
         "--use_fast_math",
         "--threads=8",
-        "-arch=sm_75"  # ✅ Only add this here inside "nvcc"
+        "-gencode=arch=compute_75,code=sm_75"  # ✅ Only add this here inside "nvcc"
     ],
 }
 
